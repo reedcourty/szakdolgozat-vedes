@@ -6,6 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,magyar]{babel}
 
+\usepackage{hyperref}
 
 \usebackgroundtemplate{
 \includegraphics[width=\paperwidth, height=\paperheight]{background.jpg}
@@ -19,19 +20,34 @@
 \newcommand{\viktanszek}{Méréstechnika és Információs Rendszerek Tanszék}
 \newcommand{\vikdoktipus}{Szakdolgozat}
 
-\begin{document}
+\hypersetup{
+    bookmarks=true,            % show bookmarks bar?
+    unicode=true ,             % non-Latin characters in Acrobat’s bookmarks
+    pdftitle={\vikcim},        % title
+    pdfauthor={\vikszerzo},    % author
+    pdfsubject={\vikdoktipus}, % subject of the document
+    pdfcreator={\vikszerzo},   % creator of the document
+    pdfnewwindow=true,         % links in new window
+    colorlinks=true,           % false: boxed links; true: colored links
+    linkcolor=black,           % color of internal links
+    citecolor=black,           % color of links to bibliography
+    filecolor=black,           % color of file links
+    urlcolor=black             % color of external links
+}
 
 \title{\vikcim}
 \author{\vikszerzo \\ \texttt{\vikszerzomail} \\[0.5cm] Konzulens: \vikkonzulens}
 \date{2012. június 14.}
 
+\begin{document}
+
 \begin{frame}[plain]
 \titlepage
 \end{frame}
 
+\section{Miről is lesz szó?}
 \begin{frame}
-\frametitle{Első slide}
-Ez itt az első slide szövege.
+\frametitle{Miről is lesz szó?}
 \end{frame}
 
 \end{document}
