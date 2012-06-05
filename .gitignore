@@ -1,0 +1,8 @@
+# Szokásos szükségtelen LaTeX generálmányok:
+*.aux
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.toc
