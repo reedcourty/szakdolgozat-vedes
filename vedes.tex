@@ -10,6 +10,7 @@
 \usepackage[english,magyar]{babel}
 
 \usepackage{hyperref}
+\usepackage{color}
 
 \usebackgroundtemplate{
 \includegraphics[width=\paperwidth, height=\paperheight]{background.jpg}
@@ -24,6 +25,15 @@
 \newcommand{\vikdoktipus}{Szakdolgozat}
 
 \newcommand{\setfootline}[1]{\setbeamertemplate{footline}{\setbeamercolor{footline}{fg=white}\begin{beamercolorbox}[sep=1cm,wd=\textwidth,ht=1cm,left]{footline}{#1}\end{beamercolorbox}}}
+
+%###########################################
+% Saját eszközök:
+%
+\definecolor{todobgszin}{rgb}{0.64,0.78,0.22}
+\definecolor{todofrszin}{rgb}{0.00,0.50,0.00}
+
+\newcommand{\todo}[1]{\fcolorbox{todofrszin}{todobgszin}{\emph{TODO: #1}}}
+\newcommand{\angolul}[1]{\foreignlanguage{english}{#1}}
 
 \hypersetup{
     bookmarks=true,            % show bookmarks bar?
@@ -85,12 +95,23 @@
 \begin{frame}
 \frametitle{Mik azok a tanulásmenedzsment rendszerek?}
 \begin{itemize}
-\item Milyen rendszereket nevezünk Learning Management Systemnek (LMS-nek)?
+\item Milyen rendszereket nevezünk \angolul{Learning Management Systemnek} (LMS-nek)?
 \item Mik egy LMS feladatai?
 \item Milyen megoldásokat találunk a piacon?
 \item Miért fontos az átjárhatóság?
 \item Mi az a SCORM, és mire jó?
 \end{itemize}
+\end{frame}
+
+\section{Tanulásmenedzsment rendszerek IT infrastruktúrája}
+\setfootline{\todo{@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@}}
+\begin{frame}
+\frametitle{Tanulásmenedzsment rendszerek IT infrastruktúrája}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=90mm, keepaspectratio]{figures/3tier_simple_001.png}
+\end{figure}
+\todo{MySQL, Linux, PHP, Moodle logót rátenni a képre!}
 \end{frame}
 
 \end{document}

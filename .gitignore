@@ -6,3 +6,6 @@
 *.pdf
 *.snm
 *.toc
+
+# A commit.log nem kell:
+commit.log
