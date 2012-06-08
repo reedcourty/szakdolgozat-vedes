@@ -3,15 +3,17 @@
 %\usetheme{pittsburgh}
 \usecolortheme{albatross}
 
-% #####################################################################
-% # Saját színek:
-\definecolor{todobgszin}{rgb}{0.64,0.78,0.22}
-\definecolor{todofrszin}{rgb}{0.00,0.50,0.00}
-\definecolor{background}{rgb}{0.00,0.306,0.530}
-% #####################################################################
+%###############################################################################
+%#
+%# Saját színek:
+%#
+\definecolor{todobgszin}{rgb}{0.64000,0.78000,0.22000}
+\definecolor{todofrszin}{rgb}{0.00000,0.50000,0.00000}
+\definecolor{background}{rgb}{0.00000,0.29412,0.49804}
+%#
+%###############################################################################
 
-\setbeamercolor{normal text}{fg=white,bg=background}
-\setbeamercovered{transparent}
+\setbeamercolor{normal text}{fg=white}
 \setbeamertemplate{navigation symbols}{} % Navigációs ikonok off
 
 \usepackage[T1]{fontenc}
@@ -31,17 +33,30 @@
 \newcommand{\vikszerzomail}{ulqp9p@gmail.com}
 \newcommand{\vikkonzulens}{Huszerl Gábor}
 \newcommand{\vikcim}{Oktatástámogató rendszerek kiszolgáló infrastruktúrájának felügyeleti lehetőségei}
-\newcommand{\viktanszek}{Méréstechnika és Információs Rendszerek Tanszék}
-\newcommand{\vikdoktipus}{Szakdolgozat}
 
-\newcommand{\setfootline}[1]{\setbeamertemplate{footline}{\setbeamercolor{footline}{fg=white}\begin{beamercolorbox}[sep=1cm,wd=\textwidth,ht=1cm,left]{footline}{#1}\end{beamercolorbox}}}
+%###############################################################################
+%#
+%# Footer definíció a szokásos címek beírásához.
+%#
+%# Csúnya hacket tartalmaz!!!
+%# A "{footline}{#1}" utáni \textcolorral egy háttérszínnel megegyező "y"
+%# karaktert írunk ki, hogy ne ugráljanak a dobozok a diákon.
+%# Ha ez elmarad, akkor az alapvonal alá nyúló karaktereket (pl. g, y stb.)
+%# tartalmazó stringek esetén eltérő magasságban lesz a footer, mint azoknál
+%# amelyek csak az alapvonalra illeszkedő karaktereket tartalmaznak.
+%#
+\newcommand{\setfootline}[1]{\setbeamertemplate{footline}{\setbeamercolor{footline}{fg=white}\begin{beamercolorbox}[sep=1cm,wd=\textwidth,ht=1cm,left]{footline}{#1}\textcolor{background}{y}\end{beamercolorbox}}}
+%#
+%###############################################################################
 
-%###########################################
-% Saját eszközök:
-%
-
+%###############################################################################
+%#
+%# Saját eszközök:
+%#
 \newcommand{\todo}[1]{\fcolorbox{todofrszin}{todobgszin}{\emph{TODO: #1}}}
 \newcommand{\angolul}[1]{\foreignlanguage{english}{#1}}
+%#
+%###############################################################################
 
 \hypersetup{
     bookmarks=true,            % show bookmarks bar?
