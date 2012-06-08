@@ -20,6 +20,7 @@
 
 \usepackage{hyperref}
 \usepackage{color}
+\usepackage{graphics}
 
 \usebackgroundtemplate{
 \includegraphics[width=\paperwidth, height=\paperheight]{background.jpg}
@@ -38,7 +39,6 @@
 %###########################################
 % Saját eszközök:
 %
-
 
 \newcommand{\todo}[1]{\fcolorbox{todofrszin}{todobgszin}{\emph{TODO: #1}}}
 \newcommand{\angolul}[1]{\foreignlanguage{english}{#1}}
@@ -141,4 +141,30 @@
 \todo{MySQL, Linux, PHP, Moodle logót rátenni a képre!}
 \end{frame}
 
+\section{Tanulásmenedzsment rendszerek erőforrás igényei}
+\setfootline{\todo{@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@}}
+\begin{frame}
+\frametitle{Tanulásmenedzsment rendszerek erőforrás igényei}
+\begin{itemize}
+    \pause
+    \item Alapvető igények
+    \begin{itemize}
+        \pause        
+        \item Webszerverek erőforrásigénye
+        \pause        
+        \item Adatbázisszerverek erőforrásigénye
+    \end{itemize}
+    \pause
+    \item Modellek
+    \begin{itemize}
+        \pause        
+        \item Lehetséges modell alkotások
+    \end{itemize}
+\end{itemize}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=110mm, keepaspectratio]{figures/modellek.png}
+\end{figure}
+\end{frame}
+\todo{Képeket overlayezni!}
 \end{document}
