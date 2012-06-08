@@ -1,8 +1,17 @@
 \documentclass{beamer}
-\usetheme{default} %{pittsburgh}
+\usetheme{default}
+%\usetheme{pittsburgh}
 \usecolortheme{albatross}
 
-\setbeamercolor{normal text}{fg=white}
+% #####################################################################
+% # Saját színek:
+\definecolor{todobgszin}{rgb}{0.64,0.78,0.22}
+\definecolor{todofrszin}{rgb}{0.00,0.50,0.00}
+\definecolor{background}{rgb}{0.00,0.306,0.530}
+% #####################################################################
+
+\setbeamercolor{normal text}{fg=white,bg=background}
+\setbeamercovered{transparent}
 \setbeamertemplate{navigation symbols}{} % Navigációs ikonok off
 
 \usepackage[T1]{fontenc}
@@ -29,8 +38,7 @@
 %###########################################
 % Saját eszközök:
 %
-\definecolor{todobgszin}{rgb}{0.64,0.78,0.22}
-\definecolor{todofrszin}{rgb}{0.00,0.50,0.00}
+
 
 \newcommand{\todo}[1]{\fcolorbox{todofrszin}{todobgszin}{\emph{TODO: #1}}}
 \newcommand{\angolul}[1]{\foreignlanguage{english}{#1}}
@@ -66,26 +74,39 @@
 \begin{frame}[t]
 \frametitle{Miről is lesz szó?}
 \begin{itemize}
+    \pause
     \item Tanulásmenedzsment rendszerek
         \begin{itemize}
+            \pause
             \item fogalma, feladatai
+            \pause
             \item átjárhatóság közöttük és miért fontos ez
         \end{itemize}
+    \pause
     \item Tanulásmenedzsment rendszerek IT infrastruktúrája
         \begin{itemize}
+            \pause
             \item A három rétegű architektúra a Moodle rendszeren bemutatva
         \end{itemize}
+    \pause
     \item Tanulásmenedzsment rendszerek erőforrás igényei
         \begin{itemize}
+            \pause
             \item Alapvető igények
+            \pause
             \item Modellek
         \end{itemize}
+    \pause
     \item Információs technológiai infrastruktúrák
         \begin{itemize}
+            \pause
             \item A klasszikus IT infrastruktúra
+            \pause
             \item Felhőalapú infrastruktúrák
         \end{itemize}
+    \pause
     \item IT infrastruktúrák proaktív menedzsmentje általános és oktatástámogató rendszerek esetén
+    \pause
     \item Összefoglalás
 \end{itemize}
 \end{frame}
@@ -95,11 +116,16 @@
 \begin{frame}
 \frametitle{Mik azok a tanulásmenedzsment rendszerek?}
 \begin{itemize}
-\item Milyen rendszereket nevezünk \angolul{Learning Management Systemnek} (LMS-nek)?
-\item Mik egy LMS feladatai?
-\item Milyen megoldásokat találunk a piacon?
-\item Miért fontos az átjárhatóság?
-\item Mi az a SCORM, és mire jó?
+    \pause
+    \item Milyen rendszereket nevezünk \angolul{Learning Management Systemnek} (LMS-nek)?
+    \pause    
+    \item Mik egy LMS feladatai?
+    \pause    
+    \item Milyen megoldásokat találunk a piacon?
+    \pause    
+    \item Miért fontos az átjárhatóság?
+    \pause    
+    \item Mi az a SCORM, és mire jó?
 \end{itemize}
 \end{frame}
 
@@ -107,6 +133,7 @@
 \setfootline{\todo{@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@}}
 \begin{frame}
 \frametitle{Tanulásmenedzsment rendszerek IT infrastruktúrája}
+\pause
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=90mm, keepaspectratio]{figures/3tier_simple_001.png}
