@@ -170,12 +170,12 @@ Ezen a szinten már nem jelenik meg a skálázás lehetősége, hiszen ez már f
 10. dia - IT infrastruktúrák menedzsmentje reaktív esetben
 ==========================================================
 
-- Reaktív rendszereket jellemezni
+Egy menedzsment rendszert reaktívnak mondunk, ha képes gyorsan és hatékonyan reagálni a külső és belső kérelmekre a belső flexibilitás maximalizálásával. Ezt a reaktivitást a rendszer rugalmasságán alapulva decentralizált döntésekkel és a reflexszerű viselkedés fejlesztésével előre definiált szabályok segítségével érik el. Tehát egy reaktív menedzsment a rendszerben már bekövetkezett változásokra reagál. A reaktív vezérlés inkább egy cselekvés valamilyen szituációra válaszolva, mint annak a szituációnak a létrehozása, vagy vezérlése.
 
 11. dia - IT infrastruktúrák menedzsmentje proaktív esetben
 ===========================================================
 
-- Proaktív rendszerek jellemezni
+Egy menedzsment rendszer proaktív, ha a reaktív része az előrelátás, illesztés és tanulás folyamataival van kiegészítve, amely folyamatok célja a rendszer támogatása, és annak koherenciájáról és hatékonyságáról való gondoskodás. Egy proaktív rendszer folyamatos monitorozással, előrelátással és tanulással próbál reagálni a rendszerben még be nem következett eseményekre. A proaktív vezérlés inkább egy szituáció irányítása, mint a szituáció által okozott történésekre adott válasz.
 
 12. dia - Hogyan kerül a csizma proaktívan az asztalra?
 =======================================================
