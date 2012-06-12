@@ -95,11 +95,19 @@ Szakdolgozatomban próbáltam összegyűjteni olyan erőforrás igény változá
 
 Ezekre a rendszer működését jellemző megfelelő historikus adatokkal statisztikai modelleket tudnánk alkotni, és ezzel előre jelezhetnénk azok lefolyását.
 
-
 7. dia - Információs technológiai infrastruktúrák
 =================================================
 
 - A klasszikus részről nem kell sokat beszélni
+
+Írásomban összegyűjtöttem a 3 rétegű architektúra egyes rétegeire jellemző szolgáltatásbiztonsággal kapcsolatos technikákat. Mint például a
+- terheléselosztás (load balancing),
+- replikálás,
+- feladatátadás hiba esetén (failover).
+
+Ezeknek a részletezésére itt most nem térnék ki.
+
+Úgy érzem az oktatástámogató rendszerek szemszögéből érdekesebb a virtualizáció és ezzel együtt a felhőalapú megoldások áttekintése.
 - Virtualizáció csak említés szintjén
     - Mi a lényege?
 - Felhőalapú megoldásokat csak átvezetés szintjén, mert következő dián részletezésre kerül
