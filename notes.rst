@@ -61,7 +61,9 @@ Tehát a SCORM segítségével oldható meg az átjárhatóság.
 5. dia - LMS-ek IT infrastruktúrája - Megvalósítás
 ==================================================
 
-- Mit sikerült elérni az önlab során?
+Önállólaboratóriumi munkám során telepítettem a Moodle LMS-t, Apache webkiszolgáló és MySQL adatbázisszerver alkalmazásával.
+
+Természetesen ez csak egy döntés volt, a web és adatbázis réteget tetszőleges másik alkalmazásra cserélhettem volna, pl. ngnix az Apache, PostgreSQL a MySQL helyett.
 
 6. dia - Tanulásmenedzsment rendszerek er®forrás igényei
 ========================================================
