@@ -2,19 +2,56 @@ Jegyzetek
 #########
 
 1. dia - Oktatástámogató rendszerek kiszolgáló infrastruktúrájának felügyeleti lehetőségei
-=============================================================================================
+==========================================================================================
 
 - Üdvözlés
 
 2. dia - Miről is lesz szó?
 ===========================
 
-- Gyorsan végigpörögni a tételeken
+- Gyorsan végig pörögni a tételeken
 
 3. dia - Mik azok a tanulásmenedzsment rendszerek?
 ==================================================
 
-- Válaszolni a dián lévő kérdésekre
+Milyen rendszereket nevezünk Learning Management Systemnek (LMS-nek)?
+---------------------------------------------------------------------
+
+Tanulásmenedzsment rendszernek, angolul Learning Management Systemnek (LMS-nek), vagy oktatástámogató rendszernek nevezzük azt a szoftver alkalmazást, amely automatizálja az oktatás adminisztrációját, követését, az online kurzusok és az azokkal kapcsolatos események, anyagok kezelését.
+
+Mik egy LMS feladatai?
+----------------------
+
+Egy robusztus LMS-nek képesnek kell lennie:
+    - központosított és automatizált adminisztrációra,
+    - önkiszolgáló és önálló irányítású szolgáltatások nyújtására,
+    - oktatási anyagok gyors összeállítására és elérhetőségének biztosítására,
+    - konszolidált képzési kezdeményezésekre skálázható, web alapú platformon,
+    - a portabilitás és a szabványok támogatására,
+    - személyre szabott tartalom előállítására és a tudás újrafelhasználásának lehetővé tételére.
+
+Milyen megoldásokat találunk a piacon?
+--------------------------------------
+
+A piacon különböző nyílt forrású, ingyenesen elérhető és zárt, kereskedelmi változatokat vagy vegyes koncepciókat is találunk, amelyek esetében ugyan a rendszer maga nyílt forrású, de a támogatásért vagy akár bérüzemeltetésért már pénzbeli juttatást kérnek.
+
+Alkalmazott technológiák:
+    - Java, PHP, Ruby on Rails, .NET
+    - MySQL, MSSQL, PostgreSQL, Oracle
+
+Miért fontos az átjárhatóság?
+-----------------------------
+
+Elkezdünk használni egy LMS-t, de a korábbi igények kiegészülnek, nem elég stabil a megnövekedett felhasználószámhoz, stb. Ilyenkor nem kell kidobnunk az egészet, hiszen a már feltöltött tartalmat jó eséllyel könnyedén átmigrálhatjuk az új rendszerbe.
+
+Mi az a SCORM, és mire jó?
+--------------------------
+
+A SCORM (Sharable Content Object Reference Model) web-alapú e-learning rendszerekkel kapcsolatos szabványok és specifikációk gyűjteménye. A SCORM definiálja a kommunikációt a kliens oldal és a futtatási környezet (run-time environment) között.
+
+Felhasználói oldalról nézve a tanárok oktatási csomagokat tölthetnek fel/le a kurzusok között akár különböző LMS megvalósítások esetén is, ha azok támogatják az adott SCORM verziót (portabilitás).
+
+Tehát a SCORM segítségével oldható meg az átjárhatóság.
 
 4. dia - LMS-ek IT infrastruktúrája
 ===================================
