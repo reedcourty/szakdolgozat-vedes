@@ -68,14 +68,15 @@ Természetesen ez csak egy döntés volt, a web és adatbázis réteget tetszől
 6. dia - Tanulásmenedzsment rendszerek erőforrás igényei
 ========================================================
 
-- Webszerverek erőforrás igényei
-    - Főleg memória a kérések kiszolgálás modellje miatt
+Webszerverek erőforrás igényei
+------------------------------
 
 Egy webszerver általában egy többfolyamatos (multi-process) vagy többszálas (multi-threaded) modell szerint működik. Ezek a feldolgozó folyamatok vagy szálak igény esetén jönnek létre, vagy egy tárolóban előre létrehozott számban várják a beérkező TCP kapcsolatokat, hogy kiszolgálhassák azokat. A széleskörűen használt Apache webszerver a többfolyamatos, készletes modellt alkalmazza.
 
 A HTTP 1.1-es verziójában megjelent a perzisztens kapcsolat, amely lehetővé teszi, hogy egy kapcsolatba több kérés is belekerüljön. Ezek a perzisztens kapcsolatok egy új típusú szűk keresztmetszetet hoztak be a szerverekbe. Amióta a kiszolgáló folyamat egy perzisztens kapcsolathoz köthető, a CPU kihasználtsága nagyon alacsony. Ezen alacsony kihasználtságon a végrehajtó folyamatok számának növelésével segíthetünk, ám ekkor a virtuális memória kezdhet el vergődni (thrashing). Ezt csak viszonylag sok elérhető memóriával orvosolhatjuk. Ebből következik, hogy a webszerverek inkább memória-, mint processzorigényesek.
     
-- Adatbázisok hasonlóak a webszerverekhez
+Adatbázisok erőforrás igényei
+-----------------------------
 
 Az adatbázisok erőforrásigénye igen összetett, hiszen egyik részről a lekérdezéseket, tranzakciókat optimalizálni kell (CPU terhelés), az adatokat a háttértárról be kell olvasni, vagy oda ki kell írni (I/O terhelés), és az ezeket az igények csökkentő technikák memóriaigénye növekedhet.
 
