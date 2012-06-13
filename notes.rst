@@ -42,6 +42,14 @@ Mik egy LMS feladatai?
         - a portabilitás és a szabványok támogatására,
         - személyre szabott tartalom előállítására és a tudás újrafelhasználásának 
           lehetővé tételére.
+          
+LSM-ek feladatai:
+    - központosított és automatizált adminisztráció,
+    - lehetőséget biztosít az önálló tanulásra,
+    - lehetőséget biztosít oktatási anyagok összeállítására, publikálására,
+    - képzésre kialakított, skálázható, webalapú platform,
+    - portábilis, szabványokat támogató,
+    - személyre szabott és újrafelhasználható tudást biztosít.
 
 Milyen megoldásokat találunk a piacon?
 --------------------------------------
