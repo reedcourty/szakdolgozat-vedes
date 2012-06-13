@@ -217,16 +217,21 @@ modelleket tudnánk alkotni, és ezzel előre jelezhetnénk azok lefolyását.
 
 - A klasszikus részről nem kell sokat beszélni
 
-Írásomban összegyűjtöttem a 3 rétegű architektúra egyes rétegeire jellemző szolgáltatásbiztonsággal kapcsolatos technikákat. Mint például a
-- terheléselosztás (load balancing),
-- replikálás,
-- feladatátadás hiba esetén (failover).
+Írásomban összegyűjtöttem a 3 rétegű architektúra egyes rétegeire jellemző 
+szolgáltatásbiztonsággal kapcsolatos technikákat.
+
+Mint például a
+    - terheléselosztás (load balancing),
+    - replikálás,
+    - feladatátadás hiba esetén (failover).
 
 Ezeknek a részletezésére itt most nem térnék ki.
 
-Úgy érzem az oktatástámogató rendszerek szemszögéből érdekesebb a virtualizáció és ezzel együtt a felhőalapú megoldások áttekintése.
-- Virtualizáció csak említés szintjén
-    - Mi a lényege?
+Úgy érzem az oktatástámogató rendszerek szemszögéből érdekesebb a virtualizáció 
+és ezzel együtt a felhőalapú megoldások áttekintése.
+
+A virtualizációs technológiák fejlődésével megjelent a Cloud Computing fogalma.
+
 - Felhőalapú megoldásokat csak átvezetés szintjén, mert következő dián részletezésre kerül
 
 8. dia - Felhőalapú infrastruktúrák az LMS-ek szemszögéből
