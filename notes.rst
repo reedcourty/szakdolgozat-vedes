@@ -26,8 +26,8 @@ Milyen rendszereket nevezünk Learning Management Systemnek (LMS-nek)?
     online kurzusok és az azokkal kapcsolatos események, anyagok kezelését.
     
 Automatizálja
-- az oktatás adminisztrációját, követését
-- kurzusok, események, anyagok kezelését  
+    - az oktatás adminisztrációját, követését
+    - kurzusok, események, anyagok kezelését  
 
 Mik egy LMS feladatai?
 ----------------------
