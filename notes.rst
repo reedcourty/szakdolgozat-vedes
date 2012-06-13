@@ -436,7 +436,21 @@ Hátrány:
 10. dia - IT infrastruktúrák menedzsmentje reaktív esetben
 ==========================================================
 
-Egy menedzsment rendszert reaktívnak mondunk, ha képes gyorsan és hatékonyan reagálni a külső és belső kérelmekre a belső flexibilitás maximalizálásával. Ezt a reaktivitást a rendszer rugalmasságán alapulva decentralizált döntésekkel és a reflexszerű viselkedés fejlesztésével előre definiált szabályok segítségével érik el. Tehát egy reaktív menedzsment a rendszerben már bekövetkezett változásokra reagál. A reaktív vezérlés inkább egy cselekvés valamilyen szituációra válaszolva, mint annak a szituációnak a létrehozása, vagy vezérlése.
+::
+
+    Egy menedzsment rendszert reaktívnak mondunk, ha képes gyorsan és hatékonyan
+    reagálni a külső és belső kérelmekre a belső flexibilitás maximalizálásával.
+    Ezt a reaktivitást a rendszer rugalmasságán alapulva decentralizált 
+    döntésekkel és a reflexszerű viselkedés fejlesztésével előre definiált 
+    szabályok segítségével érik el. Tehát egy reaktív menedzsment a rendszerben 
+    már bekövetkezett változásokra reagál. A reaktív vezérlés inkább egy 
+    cselekvés valamilyen szituációra válaszolva, mint annak a szituációnak a 
+    létrehozása, vagy vezérlése.
+
+Reaktív rendszermenedzsment:
+    - képes gyorsan és hatékonyan reagálni a külső és belső kérelmekre
+    - már bekövetkezett változásokra reagál
+    - egy cselekvés valamilyen szituációra válaszolva
 
 11. dia - IT infrastruktúrák menedzsmentje proaktív esetben
 ===========================================================
