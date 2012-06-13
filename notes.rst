@@ -155,27 +155,36 @@ Modellek
 - Alapvetően statisztikai modellek a begyűjtött historikus adatok alapján
 - Kiegészítve a felhasználói viselkedések modellezésével
 
-Szakdolgozatomban próbáltam összegyűjteni olyan erőforrás igény változásokat, 
-amelyek az LMS-ekre jellemzőek.
+::
 
-Ilyenek pl. a
-    - kurzus-/vizsgajelentkezési időszak,
-    - kurzussal kapcsolatos feladatok beadási határideje,
-    - kurzus online teszt, vagy vizsga kitöltés (határ)ideje,
-    - egyéb a kurzussal kapcsolatos offline számonkérés,
-    - online előadás közvetítés,
-    - audiovizuális tananyagokkal rendelkező kurzus számonkérésének ideje, 
+    Szakdolgozatomban próbáltam összegyűjteni olyan erőforrás igény 
+    változásokat, amelyek az LMS-ekre jellemzőek.
+    Ilyen lehet pl. a
+        - kurzus-/vizsgajelentkezési időszak,
+        - kurzussal kapcsolatos feladatok beadási határideje,
+        - kurzus online teszt, vagy vizsga kitöltés (határ)ideje,
+        - egyéb a kurzussal kapcsolatos offline számonkérés,
+        - online előadás közvetítés,
+        - audiovizuális tananyagokkal rendelkező kurzus számonkérésének ideje.
 
-Ezekre a rendszer működését jellemző megfelelő historikus adatokkal statisztikai
-modelleket tudnánk alkotni, és ezzel előre jelezhetnénk azok lefolyását.
+    Ezek eltérő módon befolyásolhatják az egyes erőforrások kihasználtságát.
+    
+    Lehetőség lenne modellek alkotására statisztikai módszerekkel a rendszer 
+    működését jellemző historikus adatokból és a felhasználói viselkedések
+    elemzéséből, és ezzel előre jelezhetnénk az erőforrás igények változásainak
+    lefolyását.
 
 7. dia - Információs technológiai infrastruktúrák
 =================================================
 
 - A klasszikus részről nem kell sokat beszélni
 
-Írásomban összegyűjtöttem a **3 rétegű architektúra** egyes rétegeire jellemző 
-szolgáltatásbiztonsággal kapcsolatos technikákat.
+::
+
+    Írásomban érintettem a 3 rétegű architektúra egyes rétegeire jellemző 
+    szolgáltatásbiztonsággal kapcsolatos technikákat, mint pl. a 
+    terheléselosztást, replikálást, de ezeknek a részletezésére most nem
+    térnék ki.
 
 Mint például a
     - **terheléselosztás** (load balancing),
@@ -184,8 +193,10 @@ Mint például a
 
 Ezeknek a részletezésére itt most nem térnék ki.
 
-Úgy érzem az oktatástámogató rendszerek szemszögéből **érdekesebb a 
-virtualizáció** és ezzel együtt a **felhőalapú megoldások** áttekintése.
+::
+
+    Úgy érzem az oktatástámogató rendszerek szemszögéből érdekesebb a
+    virtualizáció és ezzel együtt a felhőalapú megoldások áttekintése.
 
 A virtualizációs technológiák fejlődésével megjelent a Cloud Computing fogalma.
 
@@ -194,24 +205,28 @@ A virtualizációs technológiák fejlődésével megjelent a Cloud Computing fo
 8. dia - Felhőalapú infrastruktúrák az LMS-ek szemszögéből
 ==========================================================
 
+::
+
+    Az ábrán a felhőalapú infrastruktúra szolgáltatás szintje láthatók. Az egyes
+    szintek jellemzését most kihagynám, inkább az LMS-ekkel való kapcsolatukat
+    emelném ki.
+
 Tárhely mint szolgáltatás (data-Storage-as-a-Service, dSaaS)
 ------------------------------------------------------------
 
-::
-
-    Ezt a szolgáltatást nem minden irodalom szokta említeni, ám én itt mégis 
+    *Ezt a szolgáltatást nem minden irodalom szokta említeni, ám én itt mégis 
     külön kezelném, hiszen ez a felhő legalapvetőbb szolgáltatása. Lényege, hogy
     online tárhelyet biztosít a felhasználóknak. Ilyen szolgáltatást nyújt pl. a
     Dropbox.com (főleg személyes felhasználásra, biztonsági mentés, megosztás 
-    céljából) vagy az Amazon S3 (inkább nagy szolgáltatók használják).
+    céljából) vagy az Amazon S3 (inkább nagy szolgáltatók használják).*
     
-    A dSaaS oktatási rendszerek esetében sok nagyméretű adat esetén lehet 
+    *A dSaaS oktatási rendszerek esetében sok nagyméretű adat esetén lehet 
     előnyös, hiszen nem kell a saját szerverünkön tárolni ezeket, megspórolva 
-    ezzel saját adattároló rendszer kialakítását, üzemeltetését.
+    ezzel saját adattároló rendszer kialakítását, üzemeltetését.*
     
-    A dSaaS segítségével a rendszerünk tárhelye jól skálázható, hiszen igény 
+    *A dSaaS segítségével a rendszerünk tárhelye jól skálázható, hiszen igény 
     esetén transzparens módon tudjuk növelni, vagy költségcsökkentés céljából 
-    visszaadni az erőforrásokat.
+    visszaadni az erőforrásokat.*
     
 - a felhő legalapvetőbb szolgáltatása
 - online tárhelyet biztosít a felhasználóknak
@@ -229,24 +244,28 @@ A dSaaS segítségével:
     - igény esetén
         - transzparens módon tudjuk növelni,
         - költségcsökkentés céljából visszaadni az erőforrásokat
+        
+::
+
+    A tárhely mint szolgáltatás az LMS-ek esetében nagyméretű adatok esetén
+    lehet előnyös, hiszen nem kell a saját szerverünkön tárolni ezeket, 
+    megspórolva ezzel saját adattároló rendszer kialakítását, üzemeltetését.
 
 Infrastuktúra mint szolgálatás (Infrastructure-as-a-Service, IaaS)
 ------------------------------------------------------------------
 
-::
-
-    Az IaaS az infrastruktúra (számítási erőforrások és tárhely) bérbeadása. Ez 
+    *Az IaaS az infrastruktúra (számítási erőforrások és tárhely) bérbeadása. Ez 
     nem csak virtualizált számítógépeket jelent garantált számítási 
     teljesítménnyel, de fenntartott sávszélességet a tárhely és az 
     internetelérésnek is. Ez lényegében egy számítógép vagy adatközpont 
     bérbevételének lehetőségét jelenti, specifikált szolgáltatásminőség (QoS) 
     megkötésekkel, amelyekkel képesek vagyunk egy tetszőleges operációs rendszer
-    és szoftver futtatására.
+    és szoftver futtatására.*
     
-    A legismertebb IaaS szolgáltatók az Amazon (Amazon EC2) és a Rackspace. A 
-    különböző IaaS-t nyújtó cégek szolgáltatásai nagyjából hasonlóak.
+    *A legismertebb IaaS szolgáltatók az Amazon (Amazon EC2) és a Rackspace. A 
+    különböző IaaS-t nyújtó cégek szolgáltatásai nagyjából hasonlóak.*
     
-    Egy LMS üzemeltetésével foglalkozó szervezet esetén rengeteg előnyt 
+    *Egy LMS üzemeltetésével foglalkozó szervezet esetén rengeteg előnyt 
     jelenthet a rendszer felhőben való üzemeltetése. Az IaaS elasztikus 
     tulajdonságának köszönhetően gyorsan tudjuk a változó erőforrásigényeket 
     kielégíteni. Ezek a szolgáltatások idő- és teljesítményalapú számlázást 
@@ -255,7 +274,7 @@ Infrastuktúra mint szolgálatás (Infrastructure-as-a-Service, IaaS)
     hogy a rendszerünk nem érhető el. Természetesen ezen a szinten még 
     szükségünk van IT munkatársakra, hiszen a rendszert fel kell építeni, és 
     szoftveres szinten karban kell tartani, de már a hardveres szint hiánya is 
-    egyszerűsítheti a munkát.
+    egyszerűsítheti a munkát.*
 
 
 Az IaaS az infrastruktúra (számítási erőforrások és tárhely) bérbeadása.
@@ -275,36 +294,40 @@ Ezen a szinten még szükségünk van IT munkatársakra:
     - a rendszert fel kell építeni,
     - szoftveres szinten karban kell tartani,
     - de a hardveres szint hiánya egyszerűsítheti a munkát.
+    
+::
+
+    Az infrastruktúra mint szolgáltatás használatával rengeteg előnyre tehet
+    szert egy LMS üzemeltetője, mint pl. az elasztikus tulajdonság, idő- és
+    teljesítményalapú számlázás és a nagy rendelkezésre állás.
 
 Platform mint szolgáltatás (Platform-as-a-Service, PaaS)
 --------------------------------------------------------
 
-::
-
-    A PaaS hasonló az IaaS-hoz, de olyan operációs rendszereket és kötelező 
+    *A PaaS hasonló az IaaS-hoz, de olyan operációs rendszereket és kötelező 
     szolgáltatásokat foglal magába, amelyek egy sajátos alkalmazásra 
     fókuszálnak. Például PaaS-ként tekinthetünk egy virtualizált szerver, 
     tárhelyszolgáltatás, operációs rendszer és alkalmazás halmazt (ami tipikusan
     egy virtuális gép fájl formátumban, pl. a VMware .vmdk állománya), 
     hozzáféréssel a szükséges szolgáltatásokhoz, mint amilyen például egy MySQL 
     adatbázis vagy egyéb, specializált helyi erőforrás. Más szavakkal a PaaS egy
-    IaaS, testre szabott szoftver stackkel egy adott alkalmazáshoz.
+    IaaS, testre szabott szoftver stackkel egy adott alkalmazáshoz.*
     
-    A piacon több PaaS szolgáltató találunk, mint például a Google AppEngine 
+    *A piacon több PaaS szolgáltató találunk, mint például a Google AppEngine 
     (Python, Java, Go), Heroku (Ruby, Node.js, Clojure, Java, Python, Scala), 
-    Epio (Python). Ezek webes alkalmazásoknak nyújtanak platformot.
+    Epio (Python). Ezek webes alkalmazásoknak nyújtanak platformot.*
     
-    A PaaS egy környezetet biztosít az alkalmazásunknak, amely lehet akár egy 
+    *A PaaS egy környezetet biztosít az alkalmazásunknak, amely lehet akár egy 
     LMS is. Az IaaS-szel ellentétben itt már nem kell foglalkoznunk az OS 
     üzemeltetésével járó feladatokkal, csak is magával az LMS alkalmazással, 
     amelyet nekünk kell telepíteni, vagy adott esetben a platformra fejleszteni.
     Ugyanakkor az IaaS-nél megjelent előnyök itt is érvényesek, mind 
-    üzemeltetés, mind költség szempontjából.
+    üzemeltetés, mind költség szempontjából.*
     
-    A erőforrás skálázódás a PaaS esetében teljesen automatikusan működik, ebből
+    *A erőforrás skálázódás a PaaS esetében teljesen automatikusan működik, ebből
     kifolyólag a felhasználónak nem is áll módjában azt befolyásolni, ő csak a 
     saját alkalmazása szintjén kap(hat) lehetőséget a skálázásra, például 
-    szükség esetén több folyamatpéldány indításával.
+    szükség esetén több folyamatpéldány indításával.*
 
 A PaaS:
     - hasonló az IaaS-hoz,
@@ -327,13 +350,19 @@ A erőforrás skálázódás a PaaS esetében
     - teljesen automatikusan működik,
     - a felhasználónak nem is áll módjában azt befolyásolni,
     - csak a saját alkalmazás szintjén kap(hat) lehetőséget a skálázásra.
+    
+::
+
+    A platform mint szolgáltatás előnye, hogy nekünk már nem kell foglalkozni
+    az infrastruktúrával, operációs rendszerrel, egyedül az oktatástámogató
+    rendszerünk fejlesztésére, telepítésére kell csak fókuszálnunk.
+    
+    Mindemelett itt is megtalálhatóak az alsóbb szintekből származó előnyök.
 
 Szoftver mint szolgáltatás (Software-as-a-Service,SaaS)
 -------------------------------------------------------
 
-::
-
-    Az alkalmazás mint szolgáltatás az előfizető számára rendelkezésre bocsájtja
+    *Az alkalmazás mint szolgáltatás az előfizető számára rendelkezésre bocsájtja
     annak a lehetőségét, hogy használja a szolgáltató egy felhő infrastruktúrán
     futtatott alkalmazását. Az alkalmazások különböző kliens eszközökön 
     keresztül érhetőek el vékony kliens interfészen, mint amilyen egy 
@@ -343,26 +372,26 @@ Szoftver mint szolgáltatás (Software-as-a-Service,SaaS)
     tárhelyet, de még az egyéni szoftver képességeket sem, kivételt talán a 
     limitált felhasználói szintű alkalmazás konfigurációs beállítások kezelése 
     képez. Egy felhőalapú infrastruktúra hardverek és szoftverek gyűjteménye, 
-    amelyek engedélyezik a számítási felhő öt alapvető jellemzőjét.
+    amelyek engedélyezik a számítási felhő öt alapvető jellemzőjét.*
     
-    A SaaS a legegyszerűbb szolgáltatás, lehetőséget biztosít alkalmazások 
+    *A SaaS a legegyszerűbb szolgáltatás, lehetőséget biztosít alkalmazások 
     bérlésére és használati idő alapú számlázásra. A SaaS a felhő legfelső 
     szintje, ez az a felület, amellyel az internetfelhasználók nagy része már 
     találkozott, még ha nem is tudatosan. Ilyen SaaS szolgáltatás a Google 
-    Gmail, Docs, Apps, a Microsoft Office 365, a Prezi.com és még sorolhatnám.
+    Gmail, Docs, Apps, a Microsoft Office 365, a Prezi.com és még sorolhatnám.*
     
-    Az LMS-ek tekintetében a SaaS jelenti a fő bevételi piacot. Rengeteg cég 
+    *Az LMS-ek tekintetében a SaaS jelenti a fő bevételi piacot. Rengeteg cég 
     található az interneten, amely fizetős LMS szolgáltatást nyújt. Ezeknek nagy
     előnye, hogy egyáltalán nem kell a rendszer üzemeltetésével foglalkozunk, és
     a tartalomra, oktatási anyagra koncentrálhatunk, hátránya, hogy kötött a 
     mozgásterünk egy ilyen rendszerben, nincs vagy korlátozott a lehetőség saját
-    környezet kialakítására.
+    környezet kialakítására.*
     
-    Ezen a szinten már nem jelenik meg a skálázás lehetősége, hiszen ez már 
+    *Ezen a szinten már nem jelenik meg a skálázás lehetősége, hiszen ez már 
     felhasználói szintnek számít. Ennek ellenére ezen a szinten elő lehetne 
     segíteni az alsóbb szintek skálázódását, ha például egy LMS-ből a már 
     említett információk és modellek alapján megvalósításra kerülnének bizonyos 
-    proaktív folyamatok. 
+    proaktív folyamatok.*
 
 A SaaS:
     - a legegyszerűbb szolgáltatás,
@@ -384,47 +413,71 @@ Előny:
 Hátrány:
     - kötött a mozgásterünk
     - nincs vagy korlátozott a lehetőség saját környezet kialakítására
+    
+::
+
+    Az LMS-ek tekintetében a szoftver mint szolgáltatás jelenti a fő bevételi 
+    piacot. Rengeteg cég található az interneten, amely fizetős LMS 
+    szolgáltatást nyújt. Ezeknek nagy előnye, hogy egyáltalán nem kell a 
+    rendszer üzemeltetésével foglalkozunk, és a tartalomra, oktatási anyagra 
+    koncentrálhatunk, hátránya, hogy kötött a mozgásterünk egy ilyen 
+    rendszerben, nincs vagy korlátozott a lehetőség saját környezet 
+    kialakítására.
 
 9. dia - IT infrastruktúrák proaktív menedzsmentje általános és oktatástámogató rendszerek esetén
 =================================================================================================
 
 - Nagyon nincs mit hozzáfűzni
 
+::
+
+    Rendszermenedzsment szempontjából az IT infrastuktúrákat két típusba 
+    sorolhatjuk:
+        - raktívba és
+        - proaktívba
+
 10. dia - IT infrastruktúrák menedzsmentje reaktív esetben
 ==========================================================
 
-::
-
-    Egy menedzsment rendszert reaktívnak mondunk, ha képes gyorsan és hatékonyan
+    *Egy menedzsment rendszert reaktívnak mondunk, ha képes gyorsan és hatékonyan
     reagálni a külső és belső kérelmekre a belső flexibilitás maximalizálásával.
     Ezt a reaktivitást a rendszer rugalmasságán alapulva decentralizált 
     döntésekkel és a reflexszerű viselkedés fejlesztésével előre definiált 
     szabályok segítségével érik el. Tehát egy reaktív menedzsment a rendszerben 
     már bekövetkezett változásokra reagál. A reaktív vezérlés inkább egy 
     cselekvés valamilyen szituációra válaszolva, mint annak a szituációnak a 
-    létrehozása, vagy vezérlése.
+    létrehozása, vagy vezérlése.*
 
 Reaktív rendszermenedzsment:
     - képes gyorsan és hatékonyan reagálni a külső és belső kérelmekre
     - már bekövetkezett változásokra reagál
     - egy cselekvés valamilyen szituációra válaszolva
+    
+::
+
+    Egy menedzsment rendszert reaktívnak mondunk, ha képes gyorsan és hatékonyan
+    reagálni a külső és belső kérelmekre, már bekövetkezett változásokra.
 
 11. dia - IT infrastruktúrák menedzsmentje proaktív esetben
 ===========================================================
 
-::
-
-    Egy menedzsment rendszer proaktív, ha a reaktív része az előrelátás, 
+    *Egy menedzsment rendszer proaktív, ha a reaktív része az előrelátás, 
     illesztés és tanulás folyamataival van kiegészítve, amely folyamatok célja a
     rendszer támogatása, és annak koherenciájáról és hatékonyságáról való 
     gondoskodás. Egy proaktív rendszer folyamatos monitorozással, előrelátással 
     és tanulással próbál reagálni a rendszerben még be nem következett 
     eseményekre. A proaktív vezérlés inkább egy szituáció irányítása, mint a 
-    szituáció által okozott történésekre adott válasz.
+    szituáció által okozott történésekre adott válasz.*
 
 Proaktív rendszermenedzsment:
     - a reaktív része az előrelátás, illesztés és tanulás folyamataival van kiegészítve,
     - folyamatos monitorozással, előrelátással és tanulással próbál reagálni a rendszerben még be nem következett eseményekre
+
+::
+
+    Egy menedzsment rendszer proaktív, ha a reaktív részen felül folyamatos 
+    monitorozással, előrelátással és tanulással próbál reagálni a rendszerben 
+    még be nem következett eseményekre.
 
 12. dia - Hogyan kerül a csizma proaktívan az asztalra?
 =======================================================
@@ -444,6 +497,27 @@ Példa:
       kérések függvényében.
 
 - Érdemes lehet megjegyezni, hogy ezen a részen tovább vihető a szakdolgozat témája
+
+::
+
+    Próbáljuk meg összerakni az eddig elhangzott dolgokat. Említettem, hogy a
+    változó erőforrás igényekre megpróbálhatunk modelleket alkotni, amely
+    modellek alapján proaktívan kezelhetjük a rendszer változásait.
+    
+    A felhő alapú szolgáltatások nagy részénél az IaaS szintjén rendelkezésünkre
+    bocsájtanak egy API, amely segítségével saját magunk tudjuk rugalmasan
+    kezelni a rendelkezésre álló erőforrásokat.
+    
+    Ha ezt a két dolgot összerakjuk egy LMS rendszer alkalmazási rétegében,
+    akkor egy automatikusan működő, proaktív, nagy rendelkezésre álló, költség-
+    hatákony rendszer kapunk.
+    
+    Vegyük példának mondjuk az Amazon EC2 API-ját, a Moodle rendszert. A Moodle
+    nyílt forráskódú, tehát lehetőséget biztosít arra, hogy saját magunk
+    bővítsük ki. A megfelelő helyen implementálhatjuk azt, hogy egy teszt
+    kitöltési időszak, vagy kurzus felvételi időszak kezdete előtt automatikusan
+    meghívódjon az API megfelelő metódusa, és az előzetes tapasztalatok alapján
+    megnöveljük a rendszert kiszolgáló erőforrások számát.
 
 13. dia - Összefoglalás
 =======================
