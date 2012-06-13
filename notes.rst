@@ -322,13 +322,54 @@ Ezen a szinten még szükségünk van IT munkatársakra:
 Platform mint szolgáltatás (Platform-as-a-Service, PaaS)
 --------------------------------------------------------
 
-A PaaS hasonló az IaaS-hoz, de olyan operációs rendszereket és kötelező szolgáltatásokat foglal magába, amelyek egy sajátos alkalmazásra fókuszálnak. Például PaaS-ként tekinthetünk egy virtualizált szerver, tárhelyszolgáltatás, operációs rendszer és alkalmazás halmazt (ami tipikusan egy virtuális gép fájl formátumban, pl. a VMware .vmdk állománya), hozzáféréssel a szükséges szolgáltatásokhoz, mint amilyen például egy MySQL adatbázis vagy egyéb, specializált helyi erőforrás. Más szavakkal a PaaS egy IaaS, testre szabott szoftver stackkel egy adott alkalmazáshoz.
+::
 
-A piacon több PaaS szolgáltató találunk, mint például a Google AppEngine (Python, Java, Go), Heroku (Ruby, Node.js, Clojure, Java, Python, Scala), Epio (Python). Ezek webes alkalmazásoknak nyújtanak platformot.
+    A PaaS hasonló az IaaS-hoz, de olyan operációs rendszereket és kötelező 
+    szolgáltatásokat foglal magába, amelyek egy sajátos alkalmazásra 
+    fókuszálnak. Például PaaS-ként tekinthetünk egy virtualizált szerver, 
+    tárhelyszolgáltatás, operációs rendszer és alkalmazás halmazt (ami tipikusan
+    egy virtuális gép fájl formátumban, pl. a VMware .vmdk állománya), 
+    hozzáféréssel a szükséges szolgáltatásokhoz, mint amilyen például egy MySQL 
+    adatbázis vagy egyéb, specializált helyi erőforrás. Más szavakkal a PaaS egy
+    IaaS, testre szabott szoftver stackkel egy adott alkalmazáshoz.
+    
+    A piacon több PaaS szolgáltató találunk, mint például a Google AppEngine 
+    (Python, Java, Go), Heroku (Ruby, Node.js, Clojure, Java, Python, Scala), 
+    Epio (Python). Ezek webes alkalmazásoknak nyújtanak platformot.
+    
+    A PaaS egy környezetet biztosít az alkalmazásunknak, amely lehet akár egy 
+    LMS is. Az IaaS-szel ellentétben itt már nem kell foglalkoznunk az OS 
+    üzemeltetésével járó feladatokkal, csak is magával az LMS alkalmazással, 
+    amelyet nekünk kell telepíteni, vagy adott esetben a platformra fejleszteni.
+    Ugyanakkor az IaaS-nél megjelent előnyök itt is érvényesek, mind 
+    üzemeltetés, mind költség szempontjából.
+    
+    A erőforrás skálázódás a PaaS esetében teljesen automatikusan működik, ebből
+    kifolyólag a felhasználónak nem is áll módjában azt befolyásolni, ő csak a 
+    saját alkalmazása szintjén kap(hat) lehetőséget a skálázásra, például 
+    szükség esetén több folyamatpéldány indításával.
 
-A PaaS egy környezetet biztosít az alkalmazásunknak, amely lehet akár egy LMS is. Az IaaS-szel ellentétben itt már nem kell foglalkoznunk az OS üzemeltetésével járó feladatokkal, csak is magával az LMS alkalmazással, amelyet nekünk kell telepíteni, vagy adott esetben a platformra fejleszteni. Ugyanakkor az IaaS-nél megjelent előnyök itt is érvényesek, mind üzemeltetés, mind költség szempontjából.
+A PaaS:
+    - hasonló az IaaS-hoz,
+    - OS-t és kötelező szolgáltatásokat foglal magába
+    
+Például PaaS-ként tekinthetünk
+    - egy virtualizált szerver,
+    - tárhelyszolgáltatás,
+    - operációs rendszer és alkalmazás halmazt,
+    - hozzáféréssel a szükséges szolgáltatásokhoz.
 
-A erőforrás skálázódás a PaaS esetében teljesen automatikusan működik, ebből kifolyólag a felhasználónak nem is áll módjában azt befolyásolni, ő csak a saját alkalmazása szintjén kap(hat) lehetőséget a skálázásra, például szükség esetén több folyamatpéldány indításával.
+PaaS szolgáltatók
+    - Google AppEngine (Python, Java, Go),
+    - Heroku (Ruby, Node.js, Clojure, Java, Python, Scala),
+    - Epio (Python).
+
+Ezek webes alkalmazásoknak nyújtanak platformot.
+
+A erőforrás skálázódás a PaaS esetében
+    - teljesen automatikusan működik,
+    - a felhasználónak nem is áll módjában azt befolyásolni,
+    - csak a saját alkalmazás szintjén kap(hat) lehetőséget a skálázásra.
 
 Szoftver mint szolgáltatás (Software-as-a-Service,SaaS)
 -------------------------------------------------------
