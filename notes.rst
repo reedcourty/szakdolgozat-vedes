@@ -455,7 +455,19 @@ Reaktív rendszermenedzsment:
 11. dia - IT infrastruktúrák menedzsmentje proaktív esetben
 ===========================================================
 
-Egy menedzsment rendszer proaktív, ha a reaktív része az előrelátás, illesztés és tanulás folyamataival van kiegészítve, amely folyamatok célja a rendszer támogatása, és annak koherenciájáról és hatékonyságáról való gondoskodás. Egy proaktív rendszer folyamatos monitorozással, előrelátással és tanulással próbál reagálni a rendszerben még be nem következett eseményekre. A proaktív vezérlés inkább egy szituáció irányítása, mint a szituáció által okozott történésekre adott válasz.
+::
+
+    Egy menedzsment rendszer proaktív, ha a reaktív része az előrelátás, 
+    illesztés és tanulás folyamataival van kiegészítve, amely folyamatok célja a
+    rendszer támogatása, és annak koherenciájáról és hatékonyságáról való 
+    gondoskodás. Egy proaktív rendszer folyamatos monitorozással, előrelátással 
+    és tanulással próbál reagálni a rendszerben még be nem következett 
+    eseményekre. A proaktív vezérlés inkább egy szituáció irányítása, mint a 
+    szituáció által okozott történésekre adott válasz.
+
+Proaktív rendszermenedzsment:
+    - a reaktív része az előrelátás, illesztés és tanulás folyamataival van kiegészítve,
+    - folyamatos monitorozással, előrelátással és tanulással próbál reagálni a rendszerben még be nem következett eseményekre
 
 12. dia - Hogyan kerül a csizma proaktívan az asztalra?
 =======================================================
