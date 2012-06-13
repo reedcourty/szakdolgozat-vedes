@@ -472,7 +472,20 @@ Proaktív rendszermenedzsment:
 12. dia - Hogyan kerül a csizma proaktívan az asztalra?
 =======================================================
 
-- Nagyon nem kell sokat hozzáfűzni
+Mi is lenne a lényeg?
+    - Vegyük az LMS-eket, amelyekre más rendszerektől eltérő erőforrás igény
+      változással kapcsolatos modelleket lehetne alkotni
+    - Az LMS-t üzemeltessük olyan rendszeren, amely rendelkezik az erőforrások
+      elérhetőségét szabályozó API-val.
+    - Bővítsük az LMS-ünket oly módon, hogy az egyes erőforrás igény változást
+      okozó LMS use-case-ek megfelelő API hívásokkal változtatják az erőforrások
+      számát.
+      
+Példa:
+    - Egy előre beállított teszt kitöltési időszakra a kiadott API-n keresztül
+      növeljük a szükséges erőforrások számát a megnövekedett felhasználói
+      kérések függvényében.
+
 - Érdemes lehet megjegyezni, hogy ezen a részen tovább vihető a szakdolgozat témája
 
 13. dia - Összefoglalás
