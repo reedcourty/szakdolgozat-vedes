@@ -20,7 +20,10 @@ Milyen rendszereket nevezünk Learning Management Systemnek (LMS-nek)?
 
 ::
 
-    Tanulásmenedzsment rendszernek, angolul Learning Management Systemnek (LMS-nek), vagy oktatástámogató rendszernek nevezzük azt a szoftver alkalmazást, amely automatizálja az oktatás adminisztrációját, követését, az online kurzusok és az azokkal kapcsolatos események, anyagok kezelését.
+    Tanulásmenedzsment rendszernek, angolul Learning Management Systemnek 
+    (LMS-nek), vagy oktatástámogató rendszernek nevezzük azt a szoftver 
+    alkalmazást, amely automatizálja az oktatás adminisztrációját, követését, az
+    online kurzusok és az azokkal kapcsolatos események, anyagok kezelését.
     
 Automatizálja
     - az oktatás adminisztrációját, követését
@@ -52,7 +55,10 @@ Milyen megoldásokat találunk a piacon?
 
 ::
 
-    A piacon különböző nyílt forrású, ingyenesen elérhető és zárt, kereskedelmi változatokat vagy vegyes koncepciókat is találunk, amelyek esetében ugyan a rendszer maga nyílt forrású, de a támogatásért vagy akár bérüzemeltetésért már pénzbeli juttatást kérnek.
+    A piacon különböző nyílt forrású, ingyenesen elérhető és zárt, kereskedelmi 
+    változatokat vagy vegyes koncepciókat is találunk, amelyek esetében ugyan a 
+    rendszer maga nyílt forrású, de a támogatásért vagy akár bérüzemeltetésért 
+    már pénzbeli juttatást kérnek.
     
 Megoldások:
     - Nyílt forrású, ingyenesen elérhető
