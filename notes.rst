@@ -96,6 +96,17 @@ Felhasználói oldalról nézve
 
 Tehát a SCORM segítségével oldható meg az átjárhatóság.
 
+    ----------------------------------------------------------------------------
+    
+    *Az átjárhatóság biztosítására alkották meg a SCORM-ot, vagyis a Sharable
+    Content Object Reference Model-t, amely web-alapú LMS-ekkel kapcsolatos
+    szabványok és specifikációk gyűjteménye.*
+    
+    *Felhasználói oldalról nézve ez annyit tesz, hogy tetszőleges SCORM-ot
+    támogató rendszerből átmigrálhatjuk az oktatással kapcsolatos anyagokat.*
+    
+    ----------------------------------------------------------------------------
+    
 4. dia - LMS-ek IT infrastruktúrája
 ===================================
 
