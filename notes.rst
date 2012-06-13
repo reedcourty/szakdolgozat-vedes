@@ -75,10 +75,20 @@ Miért fontos az átjárhatóság?
 -----------------------------
 
 Elkezdünk használni egy LMS-t, de
-    - a korábbi igények kiegészülnek,
-    - nem elég stabil a megnövekedett felhasználószámhoz, stb.
+   - a korábbi igények kiegészülnek,
+   - nem elég stabil a megnövekedett felhasználószámhoz, stb.
 
-Nem kell kidobnunk az egészet, a már feltöltött tartalmat jó eséllyel könnyedén átmigrálhatjuk az új rendszerbe.
+Nem kell kidobnunk az egészet, a már feltöltött tartalmat jó eséllyel könnyedén
+átmigrálhatjuk az új rendszerbe.
+
+::
+
+    A kiválasztott rendszer használata során kiderülhet, hogy nem felel meg 
+    100%-osan, mivel esetleg új igények merülnek fel, vagy nem elég stabil a 
+    megnövekedett felhasználószám mellett.
+
+    Szerencsére a legtöbb rendszer között biztosított az átjárhatóság, így nem 
+    kell kidobnunk a már elkészült rendszertől független tartalmat.
 
 Mi az a SCORM, és mire jó?
 --------------------------
@@ -96,16 +106,14 @@ Felhasználói oldalról nézve
 
 Tehát a SCORM segítségével oldható meg az átjárhatóság.
 
-    ----------------------------------------------------------------------------
+::
     
-    *Az átjárhatóság biztosítására alkották meg a SCORM-ot, vagyis a Sharable
+    Az átjárhatóság biztosítására alkották meg a SCORM-ot, vagyis a Sharable 
     Content Object Reference Model-t, amely web-alapú LMS-ekkel kapcsolatos
-    szabványok és specifikációk gyűjteménye.*
+    szabványok és specifikációk gyűjteménye.
     
-    *Felhasználói oldalról nézve ez annyit tesz, hogy tetszőleges SCORM-ot
-    támogató rendszerből átmigrálhatjuk az oktatással kapcsolatos anyagokat.*
-    
-    ----------------------------------------------------------------------------
+    Felhasználói oldalról nézve ez annyit tesz, hogy tetszőleges SCORM-ot 
+    támogató rendszerből átmigrálhatjuk az oktatással kapcsolatos anyagokat.
     
 4. dia - LMS-ek IT infrastruktúrája
 ===================================
@@ -114,6 +122,10 @@ Tehát a SCORM segítségével oldható meg az átjárhatóság.
 - A webes megoldások miatt következik a 3 rétegű architektúra.
 - A réteges szerkezet miatt az implementációs és alkalmazott technológia
   rugalmassága.
+  
+::
+
+    A webes megoldásból következik a 3 rétegű architektúra alkalmazása.
 
 5. dia - LMS-ek IT infrastruktúrája - Megvalósítás
 ==================================================
@@ -127,6 +139,12 @@ Természetesen ez csak egy döntés
     - a web és adatbázis réteget tetszőleges másik alkalmazásra cserélhettem volna,
         - pl. ngnix az Apache,
         - PostgreSQL a MySQL helyett.
+        
+::
+
+    Korábbi munkám során az egyik PHP alapú LMS-t, Moodle-t telepítettem és
+    üzemeltem be. A webkiszolgáló réteg feladatait Apache, az adatbázis rétegét
+    pedig MySQL adatbázis szerver látta el.
 
 6. dia - Tanulásmenedzsment rendszerek erőforrás igényei
 ========================================================
@@ -134,16 +152,14 @@ Természetesen ez csak egy döntés
 Webszerverek erőforrás igényei
 ------------------------------
 
-::
-
-    Egy webszerver általában egy többfolyamatos (multi-process) vagy többszálas 
+    *Egy webszerver általában egy többfolyamatos (multi-process) vagy többszálas 
     (multi-threaded) modell szerint működik. Ezek a feldolgozó folyamatok vagy 
     szálak igény esetén jönnek létre, vagy egy tárolóban előre létrehozott 
     számban várják a beérkező TCP kapcsolatokat, hogy kiszolgálhassák azokat. A 
     széleskörűen használt Apache webszerver a többfolyamatos, készletes modellt 
-    alkalmazza.
+    alkalmazza.*
     
-    A HTTP 1.1-es verziójában megjelent a perzisztens kapcsolat, amely lehetővé 
+    *A HTTP 1.1-es verziójában megjelent a perzisztens kapcsolat, amely lehetővé 
     teszi, hogy egy kapcsolatba több kérés is belekerüljön. Ezek a perzisztens 
     kapcsolatok egy új típusú szűk keresztmetszetet hoztak be a szerverekbe. 
     Amióta a kiszolgáló folyamat egy perzisztens kapcsolathoz köthető, a CPU 
@@ -151,7 +167,7 @@ Webszerverek erőforrás igényei
     folyamatok számának növelésével segíthetünk, ám ekkor a virtuális memória 
     kezdhet el vergődni (thrashing). Ezt csak viszonylag sok elérhető memóriával
     orvosolhatjuk. Ebből következik, hogy a webszerverek inkább memória-, mint 
-    processzorigényesek.
+    processzorigényesek.*
 
 Egy webszerver működési modellje:
     - többfolyamatos (multi-process) vagy
@@ -174,6 +190,11 @@ Perzisztens kapcsolat:
         - ezt sok elérhető memóriával orvosolhatjuk
 
 A webszerverek inkább memória-, mint processzorigényesek.
+
+::
+
+    A webszerverek perzisztens kapcsolat-kezeléséből következik, hogy inkább
+    memória, mint CPU igényesek.
     
 Adatbázisok erőforrás igényei
 -----------------------------
