@@ -240,11 +240,38 @@ A virtualizációs technológiák fejlődésével megjelent a Cloud Computing fo
 Tárhely mint szolgáltatás (data-Storage-as-a-Service, dSaaS)
 ------------------------------------------------------------
 
-Ezt a szolgáltatást nem minden irodalom szokta említeni, ám én itt mégis külön kezelném, hiszen ez a felhő legalapvetőbb szolgáltatása. Lényege, hogy online tárhelyet biztosít a felhasználóknak. Ilyen szolgáltatást nyújt pl. a Dropbox.com (főleg személyes felhasználásra, biztonsági mentés, megosztás céljából) vagy az Amazon S3 (inkább nagy szolgáltatók használják).
+::
 
-A dSaaS oktatási rendszerek esetében sok nagyméretű adat esetén lehet előnyös, hiszen nem kell a saját szerverünkön tárolni ezeket, megspórolva ezzel saját adattároló rendszer kialakítását, üzemeltetését. 
+    Ezt a szolgáltatást nem minden irodalom szokta említeni, ám én itt mégis 
+    külön kezelném, hiszen ez a felhő legalapvetőbb szolgáltatása. Lényege, hogy
+    online tárhelyet biztosít a felhasználóknak. Ilyen szolgáltatást nyújt pl. a
+    Dropbox.com (főleg személyes felhasználásra, biztonsági mentés, megosztás 
+    céljából) vagy az Amazon S3 (inkább nagy szolgáltatók használják).
+    
+    A dSaaS oktatási rendszerek esetében sok nagyméretű adat esetén lehet 
+    előnyös, hiszen nem kell a saját szerverünkön tárolni ezeket, megspórolva 
+    ezzel saját adattároló rendszer kialakítását, üzemeltetését.
+    
+    A dSaaS segítségével a rendszerünk tárhelye jól skálázható, hiszen igény 
+    esetén transzparens módon tudjuk növelni, vagy költségcsökkentés céljából 
+    visszaadni az erőforrásokat.
+    
+- a felhő legalapvetőbb szolgáltatása
+- online tárhelyet biztosít a felhasználóknak
+- ilyen szolgáltatást nyújt pl.
+    - Dropbox.com,
+    - Amazon S3
 
-A dSaaS segítségével a rendszerünk tárhelye jól skálázható, hiszen igény esetén transzparens módon tudjuk növelni, vagy költségcsökkentés céljából visszaadni az erőforrásokat. 
+A dSaaS oktatási rendszerek esetében:
+    - sok nagyméretű adat esetén lehet előnyös
+    - nem kell a saját szerverünkön tárolni ezeket
+    - nincs szükség saját adattároló rendszer kialakítására, üzemeltetésére
+    
+A dSaaS segítségével:
+    - a rendszerünk tárhelye jól skálázható,
+    - igény esetén
+        - transzparens módon tudjuk növelni,
+        - költségcsökkentés céljából visszaadni az erőforrásokat
 
 Infrastuktúra mint szolgálatás (Infrastructure-as-a-Service, IaaS)
 ------------------------------------------------------------------
