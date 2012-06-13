@@ -90,9 +90,9 @@ Mi az a SCORM, és mire jó?
   között.
 
 Felhasználói oldalról nézve
-- a tanárok oktatási csomagokat tölthetnek fel/le a kurzusok között,
-- akár különböző LMS megvalósítások esetén is,
-- ha azok támogatják az adott SCORM verziót (portabilitás).
+    - a tanárok oktatási csomagokat tölthetnek fel/le a kurzusok között,
+    - akár különböző LMS megvalósítások esetén is,
+    - ha azok támogatják az adott SCORM verziót (portabilitás).
 
 Tehát a SCORM segítségével oldható meg az átjárhatóság.
 
