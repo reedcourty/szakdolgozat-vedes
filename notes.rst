@@ -185,18 +185,31 @@ Egy menedzsment rendszer proaktív, ha a reaktív része az előrelátás, illes
 14. dia - A bíráló kérdése
 ==========================
 
-- Mi is itt a probléma?
-    - Adattárolás felhőben
-        - Nem ismert az adatok helye
-        - Nem rendelkezünk az infrastruktúra felett
+Mi is itt a probléma?
+---------------------
+
+- Adattárolás felhőben
+    - Nem ismert az adatok helye
+    - Nem rendelkezünk az infrastruktúra felett
     - Mi a biztosíték arra, hogy a cloud szolgáltató nem fér hozzá a kutatásainkkal kapcsolatos adatokhoz?
-- Vannak különféle PET alkalmazások, és megvalósítások
-    - Rejtjelezés
-    - Adatbázis lekérdezések
-        - Lekérdezések átalakítása a kliensben
-        - Intevallumok lekérdezése a tényleges adat helyett
-    - PIR (Privacy Information Retrieval)
-        - Lekérdezés egy adatbázisból úgy, hogy a szerver ne tudja mi volt a kérdés 
+
+Lehetőségek a probléma megoldására
+----------------------------------
+
+A PET-ek környékén érdemes lehet szétnézni:
+
+- Vannak különféle alkalmazások, és megvalósítások
+- Adatbázis lekérdezések
+    - Lekérdezések átalakítása a kliensben
+    - Intevallumok lekérdezése a tényleges adat helyett
+- PIR (Privacy Information Retrieval)
+    - Lekérdezés egy adatbázisból úgy, hogy a szerver ne tudja mi volt a kérdés
+
+DE! Ezek nem igazán az LMS-ekre jellemző use-case-ek.
+
+Legjobb megoldás:
+
+- Rejtjelezés, titkosítás
 
 15 . dia - Kérdések?
 ====================
