@@ -32,7 +32,8 @@ Egy robusztus LMS-nek képesnek kell lennie:
     - oktatási anyagok gyors összeállítására és elérhetőségének biztosítására,
     - konszolidált képzési kezdeményezésekre skálázható, web alapú platformon,
     - a portabilitás és a szabványok támogatására,
-    - személyre szabott tartalom előállítására és a tudás újrafelhasználásának lehetővé tételére.
+    - személyre szabott tartalom előállítására és a tudás újrafelhasználásának 
+      lehetővé tételére.
 
 Milyen megoldásokat találunk a piacon?
 --------------------------------------
