@@ -32,14 +32,16 @@ Automatizálja
 Mik egy LMS feladatai?
 ----------------------
 
-Egy robusztus LMS-nek képesnek kell lennie:
-    - központosított és automatizált adminisztrációra,
-    - önkiszolgáló és önálló irányítású szolgáltatások nyújtására,
-    - oktatási anyagok gyors összeállítására és elérhetőségének biztosítására,
-    - konszolidált képzési kezdeményezésekre skálázható, web alapú platformon,
-    - a portabilitás és a szabványok támogatására,
-    - személyre szabott tartalom előállítására és a tudás újrafelhasználásának 
-      lehetővé tételére.
+::
+
+    Egy robusztus LMS-nek képesnek kell lennie:
+        - központosított és automatizált adminisztrációra,
+        - önkiszolgáló és önálló irányítású szolgáltatások nyújtására,
+        - oktatási anyagok gyors összeállítására és elérhetőségének biztosítására,
+        - konszolidált képzési kezdeményezésekre skálázható, web alapú platformon,
+        - a portabilitás és a szabványok támogatására,
+        - személyre szabott tartalom előállítására és a tudás újrafelhasználásának 
+          lehetővé tételére.
 
 Milyen megoldásokat találunk a piacon?
 --------------------------------------
