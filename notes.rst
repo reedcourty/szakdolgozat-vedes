@@ -20,10 +20,7 @@ Milyen rendszereket nevezünk Learning Management Systemnek (LMS-nek)?
 
 ::
 
-    Tanulásmenedzsment rendszernek, angolul Learning Management Systemnek
-    (LMS-nek), vagy oktatástámogató rendszernek nevezzük azt a szoftver 
-    alkalmazást, amely automatizálja az oktatás adminisztrációját, követését, az
-    online kurzusok és az azokkal kapcsolatos események, anyagok kezelését.
+    Tanulásmenedzsment rendszernek, angolul Learning Management Systemnek (LMS-nek), vagy oktatástámogató rendszernek nevezzük azt a szoftver alkalmazást, amely automatizálja az oktatás adminisztrációját, követését, az online kurzusok és az azokkal kapcsolatos események, anyagok kezelését.
     
 Automatizálja
     - az oktatás adminisztrációját, követését
@@ -37,13 +34,10 @@ Mik egy LMS feladatai?
     Egy robusztus LMS-nek képesnek kell lennie:
         - központosított és automatizált adminisztrációra,
         - önkiszolgáló és önálló irányítású szolgáltatások nyújtására,
-        - oktatási anyagok gyors összeállítására és elérhetőségének
-          biztosítására,
-        - konszolidált képzési kezdeményezésekre skálázható, web alapú
-          platformon,
+        - oktatási anyagok gyors összeállítására és elérhetőségének biztosítására,
+        - konszolidált képzési kezdeményezésekre skálázható, web alapú platformon,
         - a portabilitás és a szabványok támogatására,
-        - személyre szabott tartalom előállítására és a tudás 
-          újrafelhasználásának lehetővé tételére.
+        - személyre szabott tartalom előállítására és a tudás újrafelhasználásának lehetővé tételére.
           
 LSM-ek feladatai:
     - központosított és automatizált adminisztráció,
@@ -58,10 +52,7 @@ Milyen megoldásokat találunk a piacon?
 
 ::
 
-    A piacon különböző nyílt forrású, ingyenesen elérhető és zárt, kereskedelmi 
-    változatokat vagy vegyes koncepciókat is találunk, amelyek esetében ugyan a 
-    rendszer maga nyílt forrású, de a támogatásért vagy akár bérüzemeltetésért 
-    már pénzbeli juttatást kérnek.
+    A piacon különböző nyílt forrású, ingyenesen elérhető és zárt, kereskedelmi változatokat vagy vegyes koncepciókat is találunk, amelyek esetében ugyan a rendszer maga nyílt forrású, de a támogatásért vagy akár bérüzemeltetésért már pénzbeli juttatást kérnek.
     
 Megoldások:
     - Nyílt forrású, ingyenesen elérhető
@@ -77,7 +68,11 @@ Alkalmazott technológiák:
 Miért fontos az átjárhatóság?
 -----------------------------
 
-Elkezdünk használni egy LMS-t, de a korábbi igények kiegészülnek, nem elég stabil a megnövekedett felhasználószámhoz, stb. Ilyenkor nem kell kidobnunk az egészet, hiszen a már feltöltött tartalmat jó eséllyel könnyedén átmigrálhatjuk az új rendszerbe.
+Elkezdünk használni egy LMS-t, de
+    - a korábbi igények kiegészülnek,
+    - nem elég stabil a megnövekedett felhasználószámhoz, stb.
+
+Nem kell kidobnunk az egészet, a már feltöltött tartalmat jó eséllyel könnyedén átmigrálhatjuk az új rendszerbe.
 
 Mi az a SCORM, és mire jó?
 --------------------------
