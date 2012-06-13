@@ -5,6 +5,7 @@ Jegyzetek
 ==========================================================================================
 
 - Üdvözlés
+- Bemutatkozás
 
 2. dia - Miről is lesz szó?
 ===========================
@@ -17,7 +18,10 @@ Jegyzetek
 Milyen rendszereket nevezünk Learning Management Systemnek (LMS-nek)?
 ---------------------------------------------------------------------
 
-Tanulásmenedzsment rendszernek, angolul Learning Management Systemnek (LMS-nek), vagy oktatástámogató rendszernek nevezzük azt a szoftver alkalmazást, amely automatizálja az oktatás adminisztrációját, követését, az online kurzusok és az azokkal kapcsolatos események, anyagok kezelését.
+Tanulásmenedzsment rendszernek, angolul Learning Management Systemnek (LMS-nek),
+vagy oktatástámogató rendszernek nevezzük azt a szoftver alkalmazást, amely 
+automatizálja az oktatás adminisztrációját, követését, az online kurzusok és az
+azokkal kapcsolatos események, anyagok kezelését.
 
 Mik egy LMS feladatai?
 ----------------------
