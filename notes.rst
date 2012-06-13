@@ -124,6 +124,7 @@ Webszerverek erőforrás igényei
 ------------------------------
 
 ::
+
     Egy webszerver általában egy többfolyamatos (multi-process) vagy többszálas 
     (multi-threaded) modell szerint működik. Ezek a feldolgozó folyamatok vagy 
     szálak igény esetén jönnek létre, vagy egy tárolóban előre létrehozott 
