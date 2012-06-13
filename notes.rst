@@ -374,13 +374,59 @@ A erőforrás skálázódás a PaaS esetében
 Szoftver mint szolgáltatás (Software-as-a-Service,SaaS)
 -------------------------------------------------------
 
-Az alkalmazás mint szolgáltatás az előfizető számára rendelkezésre bocsájtja annak a lehetőségét, hogy használja a szolgáltató egy felhő infrastruktúrán futtatott alkalmazását. Az alkalmazások különböző kliens eszközökön keresztül érhetőek el vékony kliens interfészen, mint amilyen egy webböngésző (pl. web alapú levelezés) vagy egy program interfész. A felhasználó nem kezeli vagy vezérli a szolgáltatás alapjául szolgáló infrastruktúrát, beleértve a hálózatot, szervereket, operációs rendszereket, tárhelyet, de még az egyéni szoftver képességeket sem, kivételt talán a limitált felhasználói szintű alkalmazás konfigurációs beállítások kezelése képez. Egy felhőalapú infrastruktúra hardverek és szoftverek gyűjteménye, amelyek engedélyezik a számítási felhő öt alapvető jellemzőjét.
+::
 
-A SaaS a legegyszerűbb szolgáltatás, lehetőséget biztosít alkalmazások bérlésére és használati idő alapú számlázásra. A SaaS a felhő legfelső szintje, ez az a felület, amellyel az internetfelhasználók nagy része már találkozott, még ha nem is tudatosan. Ilyen SaaS szolgáltatás a Google Gmail, Docs, Apps, a Microsoft Office 365, a Prezi.com és még sorolhatnám.
+    Az alkalmazás mint szolgáltatás az előfizető számára rendelkezésre bocsájtja
+    annak a lehetőségét, hogy használja a szolgáltató egy felhő infrastruktúrán
+    futtatott alkalmazását. Az alkalmazások különböző kliens eszközökön 
+    keresztül érhetőek el vékony kliens interfészen, mint amilyen egy 
+    webböngésző (pl. web alapú levelezés) vagy egy program interfész. A 
+    felhasználó nem kezeli vagy vezérli a szolgáltatás alapjául szolgáló 
+    infrastruktúrát, beleértve a hálózatot, szervereket, operációs rendszereket, 
+    tárhelyet, de még az egyéni szoftver képességeket sem, kivételt talán a 
+    limitált felhasználói szintű alkalmazás konfigurációs beállítások kezelése 
+    képez. Egy felhőalapú infrastruktúra hardverek és szoftverek gyűjteménye, 
+    amelyek engedélyezik a számítási felhő öt alapvető jellemzőjét.
+    
+    A SaaS a legegyszerűbb szolgáltatás, lehetőséget biztosít alkalmazások 
+    bérlésére és használati idő alapú számlázásra. A SaaS a felhő legfelső 
+    szintje, ez az a felület, amellyel az internetfelhasználók nagy része már 
+    találkozott, még ha nem is tudatosan. Ilyen SaaS szolgáltatás a Google 
+    Gmail, Docs, Apps, a Microsoft Office 365, a Prezi.com és még sorolhatnám.
+    
+    Az LMS-ek tekintetében a SaaS jelenti a fő bevételi piacot. Rengeteg cég 
+    található az interneten, amely fizetős LMS szolgáltatást nyújt. Ezeknek nagy
+    előnye, hogy egyáltalán nem kell a rendszer üzemeltetésével foglalkozunk, és
+    a tartalomra, oktatási anyagra koncentrálhatunk, hátránya, hogy kötött a 
+    mozgásterünk egy ilyen rendszerben, nincs vagy korlátozott a lehetőség saját
+    környezet kialakítására.
+    
+    Ezen a szinten már nem jelenik meg a skálázás lehetősége, hiszen ez már 
+    felhasználói szintnek számít. Ennek ellenére ezen a szinten elő lehetne 
+    segíteni az alsóbb szintek skálázódását, ha például egy LMS-ből a már 
+    említett információk és modellek alapján megvalósításra kerülnének bizonyos 
+    proaktív folyamatok. 
 
-Az LMS-ek tekintetében a SaaS jelenti a fő bevételi piacot. Rengeteg cég található az interneten, amely fizetős LMS szolgáltatást nyújt. Ezeknek nagy előnye, hogy egyáltalán nem kell a rendszer üzemeltetésével foglalkozunk, és a tartalomra, oktatási anyagra koncentrálhatunk, hátránya, hogy kötött a mozgásterünk egy ilyen rendszerben, nincs vagy korlátozott a lehetőség saját környezet kialakítására.
+A SaaS:
+    - a legegyszerűbb szolgáltatás,
+    - lehetőséget biztosít alkalmazások bérlésére,
+    - használati idő alapú számlázásra,
+    - a felhő legfelső szintje.
 
-Ezen a szinten már nem jelenik meg a skálázás lehetősége, hiszen ez már felhasználói szintnek számít. Ennek ellenére ezen a szinten elő lehetne segíteni az alsóbb szintek skálázódását, ha például egy LMS-ből a már említett információk és modellek alapján megvalósításra kerülnének bizonyos proaktív folyamatok. 
+Ilyen SaaS szolgáltatás:
+    - Google Gmail, Docs, Apps,
+    - Microsoft Office 365,
+    - Prezi.com
+
+Az LMS-ek tekintetében a SaaS jelenti a fő bevételi piacot.
+
+Előny:
+    - nem kell a rendszer üzemeltetésével foglalkozunk
+    - a tartalomra, oktatási anyagra koncentrálhatunk
+
+Hátrány:
+    - kötött a mozgásterünk
+    - nincs vagy korlátozott a lehetőség saját környezet kialakítására
 
 9. dia - IT infrastruktúrák proaktív menedzsmentje általános és oktatástámogató rendszerek esetén
 =================================================================================================
