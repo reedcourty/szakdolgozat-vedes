@@ -37,11 +37,13 @@ Mik egy LMS feladatai?
     Egy robusztus LMS-nek képesnek kell lennie:
         - központosított és automatizált adminisztrációra,
         - önkiszolgáló és önálló irányítású szolgáltatások nyújtására,
-        - oktatási anyagok gyors összeállítására és elérhetőségének biztosítására,
-        - konszolidált képzési kezdeményezésekre skálázható, web alapú platformon,
+        - oktatási anyagok gyors összeállítására és elérhetőségének
+          biztosítására,
+        - konszolidált képzési kezdeményezésekre skálázható, web alapú
+          platformon,
         - a portabilitás és a szabványok támogatására,
-        - személyre szabott tartalom előállítására és a tudás újrafelhasználásának 
-          lehetővé tételére.
+        - személyre szabott tartalom előállítására és a tudás 
+          újrafelhasználásának lehetővé tételére.
           
 LSM-ek feladatai:
     - központosított és automatizált adminisztráció,
@@ -54,7 +56,19 @@ LSM-ek feladatai:
 Milyen megoldásokat találunk a piacon?
 --------------------------------------
 
-A piacon különböző nyílt forrású, ingyenesen elérhető és zárt, kereskedelmi változatokat vagy vegyes koncepciókat is találunk, amelyek esetében ugyan a rendszer maga nyílt forrású, de a támogatásért vagy akár bérüzemeltetésért már pénzbeli juttatást kérnek.
+::
+
+    A piacon különböző nyílt forrású, ingyenesen elérhető és zárt, kereskedelmi 
+    változatokat vagy vegyes koncepciókat is találunk, amelyek esetében ugyan a 
+    rendszer maga nyílt forrású, de a támogatásért vagy akár bérüzemeltetésért 
+    már pénzbeli juttatást kérnek.
+    
+Megoldások:
+    - Nyílt forrású, ingyenesen elérhető
+    - Zárt, kereskedelmi
+    - Vegyes koncepciók
+        - a rendszer nyílt, de
+        - támogatásért, bérüzemeltetésért fizetni kell
 
 Alkalmazott technológiák:
     - Java, PHP, Ruby on Rails, .NET
