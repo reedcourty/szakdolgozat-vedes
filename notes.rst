@@ -276,11 +276,48 @@ A dSaaS segítségével:
 Infrastuktúra mint szolgálatás (Infrastructure-as-a-Service, IaaS)
 ------------------------------------------------------------------
 
-Az IaaS az infrastruktúra (számítási erőforrások és tárhely) bérbeadása. Ez nem csak virtualizált számítógépeket jelent garantált számítási teljesítménnyel, de fenntartott sávszélességet a tárhely és az internetelérésnek is. Ez lényegében egy számítógép vagy adatközpont bérbevételének lehetőségét jelenti, specifikált szolgáltatásminőség (QoS) megkötésekkel, amelyekkel képesek vagyunk egy tetszőleges operációs rendszer és szoftver futtatására.
+::
 
-A legismertebb IaaS szolgáltatók az Amazon (Amazon EC2) és a Rackspace. A különböző IaaS-t nyújtó cégek szolgáltatásai nagyjából hasonlóak. 
+    Az IaaS az infrastruktúra (számítási erőforrások és tárhely) bérbeadása. Ez 
+    nem csak virtualizált számítógépeket jelent garantált számítási 
+    teljesítménnyel, de fenntartott sávszélességet a tárhely és az 
+    internetelérésnek is. Ez lényegében egy számítógép vagy adatközpont 
+    bérbevételének lehetőségét jelenti, specifikált szolgáltatásminőség (QoS) 
+    megkötésekkel, amelyekkel képesek vagyunk egy tetszőleges operációs rendszer
+    és szoftver futtatására.
+    
+    A legismertebb IaaS szolgáltatók az Amazon (Amazon EC2) és a Rackspace. A 
+    különböző IaaS-t nyújtó cégek szolgáltatásai nagyjából hasonlóak.
+    
+    Egy LMS üzemeltetésével foglalkozó szervezet esetén rengeteg előnyt 
+    jelenthet a rendszer felhőben való üzemeltetése. Az IaaS elasztikus 
+    tulajdonságának köszönhetően gyorsan tudjuk a változó erőforrásigényeket 
+    kielégíteni. Ezek a szolgáltatások idő- és teljesítményalapú számlázást 
+    használnak, így jó közelítéssel előre meghatározhatóak a költségek. A 
+    szolgáltatók nagy rendelkezésre állást biztosítanak, így nem fordulhat elő, 
+    hogy a rendszerünk nem érhető el. Természetesen ezen a szinten még 
+    szükségünk van IT munkatársakra, hiszen a rendszert fel kell építeni, és 
+    szoftveres szinten karban kell tartani, de már a hardveres szint hiánya is 
+    egyszerűsítheti a munkát.
 
-Egy LMS üzemeltetésével foglalkozó szervezet esetén rengeteg előnyt jelenthet a rendszer felhőben való üzemeltetése. Az IaaS elasztikus tulajdonságának köszönhetően gyorsan tudjuk a változó erőforrásigényeket kielégíteni. Ezek a szolgáltatások idő- és teljesítményalapú számlázást használnak, így jó közelítéssel előre meghatározhatóak a költségek. A szolgáltatók nagy rendelkezésre állást biztosítanak, így nem fordulhat elő, hogy a rendszerünk nem érhető el. Természetesen ezen a szinten még szükségünk van IT munkatársakra, hiszen a rendszert fel kell építeni, és szoftveres szinten karban kell tartani, de már a hardveres szint hiánya is egyszerűsítheti a munkát.
+
+Az IaaS az infrastruktúra (számítási erőforrások és tárhely) bérbeadása.
+
+A legismertebb IaaS szolgáltatók
+    - Amazon (Amazon EC2)
+    - Rackspace.
+
+Egy LMS üzemeltetésével foglalkozó szervezet esetén rengeteg előnyt jelenthet a
+rendszer felhőben való üzemeltetése.
+
+- elasztikus tulajdonság
+- idő- és teljesítményalapú számlázás
+- nagy rendelkezésre állás
+
+Ezen a szinten még szükségünk van IT munkatársakra:
+    - a rendszert fel kell építeni,
+    - szoftveres szinten karban kell tartani,
+    - de a hardveres szint hiánya egyszerűsítheti a munkát.
 
 Platform mint szolgáltatás (Platform-as-a-Service, PaaS)
 --------------------------------------------------------
