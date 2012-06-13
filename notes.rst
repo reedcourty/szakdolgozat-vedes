@@ -111,11 +111,9 @@ Tehát a SCORM segítségével oldható meg az átjárhatóság.
     - Moodle LMS,
     - Apache webkiszolgáló
     - MySQL adatbázisszerver
-alkalmazásával.
 
 Természetesen ez csak egy döntés
-    - a web és adatbázis réteget tetszőleges másik alkalmazásra cserélhettem
-      volna,
+    - a web és adatbázis réteget tetszőleges másik alkalmazásra cserélhettem volna,
         - pl. ngnix az Apache,
         - PostgreSQL a MySQL helyett.
 
@@ -125,9 +123,45 @@ Természetesen ez csak egy döntés
 Webszerverek erőforrás igényei
 ------------------------------
 
-Egy webszerver általában egy többfolyamatos (multi-process) vagy többszálas (multi-threaded) modell szerint működik. Ezek a feldolgozó folyamatok vagy szálak igény esetén jönnek létre, vagy egy tárolóban előre létrehozott számban várják a beérkező TCP kapcsolatokat, hogy kiszolgálhassák azokat. A széleskörűen használt Apache webszerver a többfolyamatos, készletes modellt alkalmazza.
+::
+    Egy webszerver általában egy többfolyamatos (multi-process) vagy többszálas 
+    (multi-threaded) modell szerint működik. Ezek a feldolgozó folyamatok vagy 
+    szálak igény esetén jönnek létre, vagy egy tárolóban előre létrehozott 
+    számban várják a beérkező TCP kapcsolatokat, hogy kiszolgálhassák azokat. A 
+    széleskörűen használt Apache webszerver a többfolyamatos, készletes modellt 
+    alkalmazza.
+    
+    A HTTP 1.1-es verziójában megjelent a perzisztens kapcsolat, amely lehetővé 
+    teszi, hogy egy kapcsolatba több kérés is belekerüljön. Ezek a perzisztens 
+    kapcsolatok egy új típusú szűk keresztmetszetet hoztak be a szerverekbe. 
+    Amióta a kiszolgáló folyamat egy perzisztens kapcsolathoz köthető, a CPU 
+    kihasználtsága nagyon alacsony. Ezen alacsony kihasználtságon a végrehajtó 
+    folyamatok számának növelésével segíthetünk, ám ekkor a virtuális memória 
+    kezdhet el vergődni (thrashing). Ezt csak viszonylag sok elérhető memóriával
+    orvosolhatjuk. Ebből következik, hogy a webszerverek inkább memória-, mint 
+    processzorigényesek.
 
-A HTTP 1.1-es verziójában megjelent a perzisztens kapcsolat, amely lehetővé teszi, hogy egy kapcsolatba több kérés is belekerüljön. Ezek a perzisztens kapcsolatok egy új típusú szűk keresztmetszetet hoztak be a szerverekbe. Amióta a kiszolgáló folyamat egy perzisztens kapcsolathoz köthető, a CPU kihasználtsága nagyon alacsony. Ezen alacsony kihasználtságon a végrehajtó folyamatok számának növelésével segíthetünk, ám ekkor a virtuális memória kezdhet el vergődni (thrashing). Ezt csak viszonylag sok elérhető memóriával orvosolhatjuk. Ebből következik, hogy a webszerverek inkább memória-, mint processzorigényesek.
+Egy webszerver működési modellje:
+    - többfolyamatos (multi-process) vagy
+    - többszálas (multi-threaded)
+
+A feldolgozó folyamatok vagy szálak
+    - igény esetén jönnek létre,
+    - vagy egy tárolóban előre létrehozott számban várják a beérkező TCP 
+      kapcsolatokat
+
+Az Apache a többfolyamatos, készletes modellt alkalmazza.
+
+Perzisztens kapcsolat:
+    - a HTTP 1.1-es verziójában jelent meg
+    - egy kapcsolatba több kérés
+    - új típusú szűk keresztmetszet
+        - a CPU kihasználtsága nagyon alacsony
+        - ezen a végrehajtó folyamatok számának növelésével segíthetünk
+        - ám ekkor a virtuális memória kezdhet el vergődni (thrashing)
+        - ezt sok elérhető memóriával orvosolhatjuk
+
+A webszerverek inkább memória-, mint processzorigényesek.
     
 Adatbázisok erőforrás igényei
 -----------------------------
