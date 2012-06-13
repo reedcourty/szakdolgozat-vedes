@@ -167,23 +167,50 @@ A webszerverek inkább memória-, mint processzorigényesek.
 Adatbázisok erőforrás igényei
 -----------------------------
 
-Az adatbázisok erőforrásigénye igen összetett, hiszen egyik részről a lekérdezéseket, tranzakciókat optimalizálni kell (CPU terhelés), az adatokat a háttértárról be kell olvasni, vagy oda ki kell írni (I/O terhelés), és az ezeket az igények csökkentő technikák memóriaigénye növekedhet.
+::
 
-Az adatbázisszerverek nagy része támogatja az ún. connection pooling megoldást, amely a webszerverek perzisztens kapcsolat-kezeléséhez hasonló, és ezzel együtt ebben az esetben is az erőforrásigény a memória felé tolódik el. Tehát összességében az adatbázisszerverek is inkább memória és lemez I/O igényesek.
+    Az adatbázisok erőforrásigénye igen összetett, hiszen egyik részről a 
+    lekérdezéseket, tranzakciókat optimalizálni kell (CPU terhelés), az adatokat
+    a háttértárról be kell olvasni, vagy oda ki kell írni (I/O terhelés), és az 
+    ezeket az igényeket csökkentő technikák memóriaigénye növekedhet.
+    
+    Az adatbázisszerverek nagy része támogatja az ún. connection pooling 
+    megoldást, amely a webszerverek perzisztens kapcsolat-kezeléséhez hasonló, 
+    és ezzel együtt ebben az esetben is az erőforrásigény a memória felé tolódik
+    el. Tehát összességében az adatbázisszerverek is inkább memória és lemez I/O
+    igényesek.
 
-- Alapvető statisztikai modellek
-    - eloszlások
+Összetett:
+    - egyik részről a lekérdezéseket, tranzakciókat optimalizálni kell (CPU terhelés),
+    - az adatokat a háttértárról be kell olvasni, vagy oda ki kell írni (I/O terhelés),
+    - az ezeket az igényeket csökkentő technikák memóriaigénye növekedhet.
 
-Szakdolgozatomban próbáltam összegyűjteni olyan erőforrás igény változásokat, amelyek az LMS-ekre jellemzőek. Ilyenek pl. a
+Connection pooling:
+    - az adatbázisszerverek nagy része támogatja
+    - a webszerverek perzisztens kapcsolat-kezeléséhez hasonló,
+    - az erőforrásigény a memória felé tolódik el.
 
-- kurzus-/vizsgajelentkezési időszak,
-- kurzussal kapcsolatos feladatok beadási határideje,
-- kurzus online teszt, vagy vizsga kitöltés (határ)ideje,
-- egyéb a kurzussal kapcsolatos offline számonkérés,
-- online előadás közvetítés,
-- audiovizuális tananyagokkal rendelkező kurzus számonkérésének ideje, 
+Tehát összességében az adatbázisszerverek is inkább memória és lemez I/O igényesek.
 
-Ezekre a rendszer működését jellemző megfelelő historikus adatokkal statisztikai modelleket tudnánk alkotni, és ezzel előre jelezhetnénk azok lefolyását.
+Modellek
+--------
+
+- Alapvetően statisztikai modellek a begyűjtött historikus adatok alapján
+- Kiegészítve a felhasználói viselkedések modellezésével
+
+Szakdolgozatomban próbáltam összegyűjteni olyan erőforrás igény változásokat, 
+amelyek az LMS-ekre jellemzőek.
+
+Ilyenek pl. a
+    - kurzus-/vizsgajelentkezési időszak,
+    - kurzussal kapcsolatos feladatok beadási határideje,
+    - kurzus online teszt, vagy vizsga kitöltés (határ)ideje,
+    - egyéb a kurzussal kapcsolatos offline számonkérés,
+    - online előadás közvetítés,
+    - audiovizuális tananyagokkal rendelkező kurzus számonkérésének ideje, 
+
+Ezekre a rendszer működését jellemző megfelelő historikus adatokkal statisztikai
+modelleket tudnánk alkotni, és ezzel előre jelezhetnénk azok lefolyását.
 
 7. dia - Információs technológiai infrastruktúrák
 =================================================
