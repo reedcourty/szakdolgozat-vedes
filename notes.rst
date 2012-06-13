@@ -83,9 +83,16 @@ Nem kell kidobnunk az egészet, a már feltöltött tartalmat jó eséllyel kön
 Mi az a SCORM, és mire jó?
 --------------------------
 
-A SCORM (Sharable Content Object Reference Model) web-alapú e-learning rendszerekkel kapcsolatos szabványok és specifikációk gyűjteménye. A SCORM definiálja a kommunikációt a kliens oldal és a futtatási környezet (run-time environment) között.
+- SCORM (Sharable Content Object Reference Model)
+- Web-alapú e-learning rendszerekkel kapcsolatos szabványok és specifikációk
+  gyűjteménye.
+- A SCORM definiálja a kommunikációt a kliens oldal és a futtatási környezet
+  között.
 
-Felhasználói oldalról nézve a tanárok oktatási csomagokat tölthetnek fel/le a kurzusok között akár különböző LMS megvalósítások esetén is, ha azok támogatják az adott SCORM verziót (portabilitás).
+Felhasználói oldalról nézve
+- a tanárok oktatási csomagokat tölthetnek fel/le a kurzusok között,
+- akár különböző LMS megvalósítások esetén is,
+- ha azok támogatják az adott SCORM verziót (portabilitás).
 
 Tehát a SCORM segítségével oldható meg az átjárhatóság.
 
