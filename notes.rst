@@ -99,14 +99,25 @@ Tehát a SCORM segítségével oldható meg az átjárhatóság.
 4. dia - LMS-ek IT infrastruktúrája
 ===================================
 
-- Nagyon gyors helyzet vázolás
+- Nagyon gyors helyzet vázolás!
+- A webes megoldások miatt következik a 3 rétegű architektúra.
+- A réteges szerkezet miatt az implementációs és alkalmazott technológia
+  rugalmassága.
 
 5. dia - LMS-ek IT infrastruktúrája - Megvalósítás
 ==================================================
 
-Önállólaboratóriumi munkám során telepítettem a Moodle LMS-t, Apache webkiszolgáló és MySQL adatbázisszerver alkalmazásával.
+Önállólaboratóriumi munkám:
+    - Moodle LMS,
+    - Apache webkiszolgáló
+    - MySQL adatbázisszerver
+alkalmazásával.
 
-Természetesen ez csak egy döntés volt, a web és adatbázis réteget tetszőleges másik alkalmazásra cserélhettem volna, pl. ngnix az Apache, PostgreSQL a MySQL helyett.
+Természetesen ez csak egy döntés
+    - a web és adatbázis réteget tetszőleges másik alkalmazásra cserélhettem
+      volna,
+        - pl. ngnix az Apache,
+        - PostgreSQL a MySQL helyett.
 
 6. dia - Tanulásmenedzsment rendszerek erőforrás igényei
 ========================================================
